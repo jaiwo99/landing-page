@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class RepositoryList extends Component {
-
-    constructor() {
-        super();
-    }
 
     renderList() {
         return this.props.repositories.map(repo => {
             return (
-                <li key="repo.title" className="list-group-item">{repo.title}</li>
+                <li key={repo.title} className="list-group-item">{repo.title}</li>
             );
         });
     }
@@ -23,4 +20,10 @@ class RepositoryList extends Component {
     }
 }
 
-export default RepositoryList;
+function mapStateToProps(state) {
+    return {
+        repositories: state.repositories
+    }
+}
+
+export default connect(mapStateToProps)(RepositoryList);

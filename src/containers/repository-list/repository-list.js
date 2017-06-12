@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Placeholder from './ironcat.png';
 import './repository-list.css';
 
 class RepositoryList extends Component {
@@ -9,9 +8,8 @@ class RepositoryList extends Component {
         return this.props.repositories.map(repo => {
             return (
                 <div key={repo.title} className="col-xs-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src={Placeholder} className="placeholder"/>
-                        <div class="caption">
+                    <div className="thumbnail">
+                        <div className="caption">
                             <h3>{repo.title}</h3>
                         </div>
                     </div>
@@ -35,7 +33,7 @@ class RepositoryList extends Component {
 
 function mapStateToProps(state) {
     return {
-        repositories: state.repositories
+        repositories: state.searchRepository
     }
 }
 

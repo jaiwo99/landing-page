@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import RepositoriesReducer from './reducer_repositories';
+import SearchRepositoryReducer from './reducer_search_repository';
 
 const rootReducer = combineReducers({
-    repositories: RepositoriesReducer
+    searchRepository: SearchRepositoryReducer
 });
 
 export default rootReducer;

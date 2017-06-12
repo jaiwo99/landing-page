@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import SearchBar from './SearchBar';
-import RepositoryList from '../../containers/RepositoryList';
+import SearchBar from '../../containers/searchbar/searchbar';
+import RepositoryList from '../../containers/repository-list/repository-list';
 
 class Repositories extends Component {
-
-    constructor() {
-        super();
-    }
 
     render() {
         return (

@@ -34,7 +34,7 @@ export default function (state = null, action) {
         case 'REPOSITORY_SEARCHED':
             return response.filter(r => r.title.indexOf(action.payload) > -1);
         default:
-            return [];
+            return response;
     }
 
     return state;

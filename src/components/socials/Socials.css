@@ -1,0 +1,12 @@
+.centeredContainer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+  box-sizing: border-box; }
+
+.socials__item {
+  color: #fff;
+  padding-right: 10px; }
+  .socials__item:hover {
+    color: rgba(255, 255, 255, 0.7); }

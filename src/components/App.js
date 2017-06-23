@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
-import StatusBar from './status-bar/StatusBar';
+import Navbar from './navbar/Navbar';
+import Hero from './hero/Hero';
 import Header from './header/Header';
 import Repositories from './repositories/Repositories';
+import Footer from './footer/Footer';
 
 class App extends Component {
 
-    constructor() {
-        super();
-    }
-
   render() {
     return (
-        <div className="container-fluid">
-            <StatusBar />
+        <article className='app__container'>
+            <Navbar />
+            <Hero />
             <Header />
             <Repositories />
-        </div>
+            <Footer />
+        </article>
     );
   }
 }

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
+import Tile from '../../components/repositories/tile/Tile';
+
 import './repository-list.css';
 
 class RepositoryList extends Component {
@@ -7,25 +10,15 @@ class RepositoryList extends Component {
     renderList() {
         return this.props.repositories.map(repo => {
             return (
-                <div key={repo.title} className="col-xs-6 col-md-3">
-                    <div className="thumbnail">
-                        <div className="caption">
-                            <h3>{repo.title}</h3>
-                        </div>
-                    </div>
-                </div>
+                <Tile key={repo.title} repository={repo} />
             );
         });
     }
 
-
-
     render() {
         return (
-            <div className="container">
-                <div className="row">
-                    {this.renderList()}
-                </div>
+            <div className='repository-list__container'>
+            {this.renderList()}
             </div>
         );
     }

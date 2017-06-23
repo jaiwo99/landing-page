@@ -1,0 +1,18 @@
+.centeredContainer, .repositories__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+  box-sizing: border-box; }
+
+.repositories__container {
+  padding: 30px 20px; }
+
+.repositories__heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  padding: 10px 20px;
+  transform: rotate(-3deg); }
